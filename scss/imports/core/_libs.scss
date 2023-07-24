@@ -71,112 +71,85 @@ input {
 }
 
 // hamburger
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none;
+#menu__toggle {
+    opacity: 0;
 }
 
-.menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
 }
 
-.menu-button-container {
-    display: none;
-    height: 100%;
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 45px;
+    left: 20px;
     width: 30px;
+    height: 30px;
     cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
 }
 
-#menu-toggle {
-    display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
     display: block;
-    background-color: $midnight;
     position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: 0.25s;
 }
 
-.menu-button::before {
+.menu__btn > span::before {
     content: "";
-    margin-top: -8px;
+    top: -8px;
 }
 
-.menu-button::after {
+.menu__btn > span::after {
     content: "";
-    margin-top: 8px;
+    top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-}
-
-@media (max-width: 997px) {
-    .menu-button-container {
-        display: flex;
-    }
-    .menu {
-        position: absolute;
-        top: -18px;
-        margin-top: 50px;
-        left: -20px;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: block;
-    }
-    #menu-toggle ~ .menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ .menu li {
-        border: 1px solid #ccc;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .menu > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #ccc;
-    }
-    .menu > li a {
-        color: #2c3e50;
-        font-weight: 600;
-    }
-    .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
+.menu__item:hover {
+    background-color: #cfd8dc;
 }
