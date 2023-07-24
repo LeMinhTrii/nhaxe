@@ -112,9 +112,14 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 .item {
+                    .name {
+                        font-size: 15px;
+                    }
                     .textbox {
+                        font-size: 15px;
                         border: none;
                         text-align: left;
+                        display: inline-block;
                         padding: 0;
                         &:hover {
                             background: transparent;

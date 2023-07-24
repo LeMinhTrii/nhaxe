@@ -1,6 +1,7 @@
 // css header
 .header {
     position: relative;
+    overflow: hidden;
     z-index: 100;
     &_content {
         position: relative;
