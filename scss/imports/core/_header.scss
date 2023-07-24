@@ -1,0 +1,174 @@
+// css header
+.header {
+    position: relative;
+    z-index: 100;
+    &_content {
+        &-top {
+            background: #4c5a75cc;
+            .wrap {
+                padding: 2px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left {
+                    color: $white-cl;
+                }
+                .right {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    .--same {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        svg,
+                        path {
+                            fill: $white-cl;
+                        }
+                        .text {
+                            display: inline-block;
+                            color: $white-cl;
+                        }
+                    }
+                    .social {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        svg,
+                        path {
+                            fill: $white-cl;
+                        }
+                    }
+                }
+            }
+        }
+        &-center {
+            background: transparent;
+            .wraps {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo {
+                    img {
+                        width: 200px;
+                    }
+                }
+                .wrap {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .item {
+                        gap: 10px;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        .content {
+                            color: $white-cl;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            background: transparent;
+            .wrap {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 370px 1fr;
+                .left {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    background: $blue-cl;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0 20px;
+                    color: $white-cl;
+                    svg,
+                    path {
+                        fill: $white-cl;
+                    }
+                    &:hover {
+                        .list {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: 0.4s;
+                        }
+                    }
+                    .list {
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        top: 38px;
+                        left: 0;
+                        background: $white-cl;
+                        width: 100%;
+                        height: auto;
+                        li {
+                            &:hover {
+                                background: #ccc;
+                                transition: 0.4s;
+                            }
+                            transition: 0.4s;
+                            border-bottom: 1px solid #ccc;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            svg,
+                            path {
+                                fill: $black-cl;
+                            }
+                            padding: 10px 20px;
+                            a {
+                                color: $black-cl;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: end;
+                    li a {
+                        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+                        svg,
+                        path {
+                            fill: $white-cl;
+                        }
+                        display: inline-block;
+                        padding: 10px;
+                        margin-left: 5px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: $white-cl;
+                    }
+                }
+            }
+        }
+    }
+    .top {
+        &.active {
+            opacity: 1;
+            transition: 0.4s;
+        }
+        transition: 0.4s;
+        opacity: 0;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        svg {
+            width: 35px;
+            height: 35px;
+            padding: 7px;
+            border-radius: 50%;
+            background: $blue-cl;
+            fill: $white-cl;
+        }
+    }
+}

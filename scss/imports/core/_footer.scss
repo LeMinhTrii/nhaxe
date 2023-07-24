@@ -1,0 +1,114 @@
+// css footer
+.footer {
+    padding-top: 70px;
+    &_content {
+        &-top {
+            display: flex;
+            gap: 30px;
+            .item {
+                flex: 1;
+                a {
+                    display: inline-block;
+                }
+                .--same {
+                    margin-top: 15px;
+                    line-height: 20px;
+                    color: #888;
+                    strong {
+                        color: $red-cl;
+                    }
+                }
+                .name {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: $red-cl;
+                    font-size: 17px;
+                }
+                .text {
+                    display: block;
+                    font-size: 15px;
+                    color: #888;
+                    margin: 15px 0 0;
+                }
+                .textbox {
+                    padding: 5px 8px;
+                    border: 2px solid #446084;
+                    color: $red-cl;
+                    text-align: center;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover {
+                        transition: 0.4s;
+                        background: #446084;
+                        color: $white-cl;
+                    }
+                }
+                .title {
+                    color: $red-cl;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                }
+                .social {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    margin-top: 20px;
+                    svg {
+                        border-radius: 50%;
+                        border: 1px solid #ccc;
+                        padding: 7px;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        transition: 0.4s;
+                        &:hover {
+                            background: #ccc;
+                            transition: 0.4s;
+                            fill: $white-cl;
+                            path {
+                                fill: $white-cl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+            .left {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 40%;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    object-fit: cover;
+                }
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .coopyright {
+        padding: 30px 0;
+        font-size: 16px;
+        text-align: center;
+        background: #4c5a75cc;
+        color: $white-cl;
+    }
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <meta name="viewport" content="width=1200px" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Nhà Xe Công Thắng</title>
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+<body class="homepage">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header_content">
+            <div class="header_content-top">
+                <div class="container-fluid">
+                    <div class="wrap">
+                        <div class="left">
+                            [An Toàn-Sạch Sẽ-Tiết Kiệm]
+                            <!-- <marquee width="100%" direction="left" height="100%">
+                                </marquee> -->
+                        </div>
+                        <div class="right">
+                            <div class="contact --same">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
+                                <span class="text">Contact</span>
+                            </div>
+                            <div class="time --same">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg>
+                                <span class="text">07:00 - 17:00</span>
+                            </div>
+                            <div class="phone --same">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>
+                                <span class="text">0964775875</span>
+                            </div>
+                            <div class="social">
+                                <a href="./">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                    </svg>
+                                </a>
+                                <a href="./">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </a>
+                                <a href="./">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>
+                                </a>
+                                <a href="./">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_content-center">
+                <div class="container-fluid wraps">
+                    <a href="./" class="logo">
+                        <img src="./img/logo-removebg-preview.png" alt="">
+                    </a>
+                    <div class="wrap">
+                        <div class="item">
+                            <img src="./img/icon3.png" alt="">
+                            <div class="content">
+                                <p class="title">Hotline: 0964775875</p>
+                                <p class="desc">Tư vấn miễn phí 24/7</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/icon1.png" alt="">
+                            <div class="content">
+                                <p class="title">100% đời mới - Sạch sẽ</p>
+                                <p class="desc">Bảo trì - bão dưỡng kỹ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/icon2.png" alt="">
+                            <div class="content">
+                                <p class="title">Cho thuê xe có tài xế</p>
+                                <p class="desc">Chuyên nghiệp - Lịch sự</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_content-bottom">
+                <div class="container-fluid wrap">
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                        <span>Dịch Vụ</span>
+                        <ul class="list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <a href="#">Bảng giá cho thuê xe du lịch</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <a href="#">Bảng giá cho thuê xe 4 chỗ</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <a href="#">Bảng giá cho thuê xe 7 chỗ</a>
+
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <a href="#">Bảng giá cho thuê xe 9 chỗ</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <a href="#">Bảng giá cho thuê xe 16 chỗ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="right">
+                        <li>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg></a>
+                        </li>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+            </svg>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- Example HTML -->
+        <section class="banner">
+            <div class="banner_content"
+                data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": true,"wrapAround": true,"groupCells": 1,"autoPlay": 3500}'>
+                <div class="thumnail">
+                    <img src="./img/sports-car-races-through-dark-blurred-motion-generative-ai.jpg" alt="">
+                </div>
+                <div class="thumnail">
+                    <img src="./img/modern-sports-car-speeds-through-dark-curve-generative-ai.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about_content">
+                    <div class="about_content-textbox">
+                        <h2 class="heading-cpn">
+                            <span>Về Chúng Tôi</span>
+                            <div class="square">
+                                <div class="rectangle"></div>
+                            </div>
+                        </h2>
+                        <p class="desc">Với hơn 10 năm kinh nghiệm hoạt động cho thuê xe du lịch tại Việt Nam
+                            <strong class="bold">nhaxecongthang.com</strong> luôn thúc đẩy hoàn thiện chất lượng phục vụ
+                            từ <strong class="bold">đời xe</strong> cho đến
+                            <strong class="bold">phẩm chất tài xế</strong> nhầm mang đến cho khách hàng những trải
+                            nghiệm thú vị nhất khi thuê xe du lịch đi tỉnh thuê xe tháng cũng như xe hợp đồng phục vụ sự
+                            kiện cưới hỏi…Với chúng tôi tiêu chí hàng đầu
+                            : <strong class="bold --red">AN TOÀN – SẠCH SẼ
+                                –
+                                TIẾT KIỆM NHẤT</strong>
+                        </p>
+                        <p class="--red">(Giá có thể thay đổi theo từng thời điểm và nhiên liệu, hãy gọi và cho chúng
+                            tôi biết lộ trình cụ thể sẽ có giá tốt nhất phục vụ quý khách)</p>
+                    </div>
+                    <div class="about_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://otodichvugiare.net/wp-content/uploads/2018/12/icon1.png" alt="">
+                            </div>
+                            <p class="name">BOOKING ĐƠN GIẢN</p>
+                            <p class="desc">Thủ tục đặt xe cực kỳ đơn giản thông qua cuộc gọi hoặc SMS, Email. Có xe đi
+                                liền, đi gấp. Xe mới khử khuẩn liên tục</p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://otodichvugiare.net/wp-content/uploads/2018/12/icon2.png" alt="">
+                            </div>
+                            <p class="name">PHỤC VỤ 24/7 LIÊN TỤC</p>
+                            <p class="desc">Hoạt động liên tục 24/7, quý khách có thể gọi điện hỏi giá, đặt xe bất cứ
+                                lúc nào, xe nhiều, xe mới, đặt xe nhanh</p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://otodichvugiare.net/wp-content/uploads/2018/12/icon3.png" alt="">
+                            </div>
+                            <p class="name">ĐƯA ĐÓN TẬN NƠI</p>
+                            <p class="desc">Tài xế sẽ đưa đón quý khách tận nơi nếu hẻm xe vào được và không bị cấm oto
+                                lưu thông hoặc bị trở ngại</p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://otodichvugiare.net/wp-content/uploads/2018/12/icon4.png" alt="">
+                            </div>
+                            <p class="name">TÀI XẾ VUI VẺ NHIỆT TÌNH</p>
+                            <p class="desc">Tài xế được bồi dưỡng nghiệp vụ du lịch, phục vụ khách hàng tận tình chu
+                                đáo, lái xe cẩn thận, rành đường</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="service_content">
+                    <div class="service_content-heading heading-cpn">
+                        <span>Dịch Vụ</span>
+                        <div class="square">
+                            <div class="rectangle"></div>
+                        </div>
+                    </div>
+                    <div class="service_content-box">
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://2.bp.blogspot.com/-n_XjIjVBxco/VDt_xCuPXOI/AAAAAAAAGFs/ImSX-wBbn6I/s1600/hinh-nen-xe-oto-3.jpg"
+                                    alt="">
+                            </div>
+                            <a href="#" class="name">Nhận Hợp Đồng Tham Quan Trong Và Ngoài Tỉnh</a>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://2.bp.blogspot.com/-n_XjIjVBxco/VDt_xCuPXOI/AAAAAAAAGFs/ImSX-wBbn6I/s1600/hinh-nen-xe-oto-3.jpg"
+                                    alt="">
+                            </div>
+                            <a href="#" class="name">Vận chuyển Hàng Hóa</a>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://2.bp.blogspot.com/-n_XjIjVBxco/VDt_xCuPXOI/AAAAAAAAGFs/ImSX-wBbn6I/s1600/hinh-nen-xe-oto-3.jpg"
+                                    alt="">
+                            </div>
+                            <a href="#" class="name">Đưa Đón Tận Nơi</a>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://2.bp.blogspot.com/-n_XjIjVBxco/VDt_xCuPXOI/AAAAAAAAGFs/ImSX-wBbn6I/s1600/hinh-nen-xe-oto-3.jpg"
+                                    alt="">
+                            </div>
+                            <a href="#" class="name">Dịch Vụ Khác</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="line">
+            <div class="container">
+                <div class="line_content">
+                    <div class="line_content-heading heading-cpn">
+                        <span>
+                            Các Tuyến Hoạt Động
+                        </span>
+                        <div class="square">
+                            <div class="rectangle"></div>
+                        </div>
+                    </div>
+                    <div class="line_content-box">
+
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/buon-ma-thuot-1003.jpg" alt="">
+                                <p class="name">Buôn Ma Thuột</p>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/cudut.jpg" alt="">
+                                <p class="name">Cư Dút</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/dakmil.jpg" alt="">
+                                <p class="name">Đắk Min</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/daksong.jpg" alt="">
+                                <p class="name">Đắk Song</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/da-lat.jpg" alt="">
+                                <p class="name">Đà Lạt</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/gialai.jpg" alt="">
+                                <p class="name">Gia Lai</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/gianghia.jpg" alt="">
+                                <p class="name">Gia Nghĩa</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/quangkhe.jpeg" alt="">
+                                <p class="name">Quảng Khê</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/baoloc.jpg" alt="">
+                                <p class="name">Bảo Lộc</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="./img/lamdong.png" alt="">
+                                <p class="name">Lâm Đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="commit">
+            <div class="container">
+                <div class="commit_content">
+                    <div class="commit_content-heading heading-cpn">
+                        <span>
+                            Cam Kết Dịch Vụ
+                        </span>
+                        <div class="square">
+                            <div class="rectangle"></div>
+                        </div>
+                    </div>
+                    <div class="commit_content-box">
+                        <div class="item">
+                            <img src="https://www.thuexehoangvu.com/image/cache/catalog/icon/xe-doi-moi-hien-dai-100x100.png"
+                                alt="">
+                            <p class="name">Xe Đời Mới, Hiện Đại</p>
+                            <p class="desc">Đời 2019 – 2022. Kiểu dáng đẹp, không gian xe rộng rãi. Trang bị các tính
+                                năng an toàn tiên tiến nhất.</p>
+                            <p class="number">01</p>
+
+                        </div>
+                        <div class="item">
+                            <img src="https://www.thuexehoangvu.com/image/cache/catalog/icon/tai-xe-cung-tay-lai-100x100.png"
+                                alt="">
+                            <p class="name">Tài Xế Cứng Tay Lái</p>
+                            <p class="desc">Tác phong chuyên nghiệp. Luôn đúng giờ, đúng hành trình. Vui vẻ, thân thiện,
+                                có am hiểu với lộ trình đảm nhận.</p>
+                            <p class="number">02</p>
+
+                        </div>
+                        <div class="item">
+                            <img src="https://www.thuexehoangvu.com/image/cache/catalog/icon/dua-don-tan-noi-100x100.png"
+                                alt="">
+                            <p class="name">Đưa Đón Tận Nơi</p>
+                            <p class="desc">Hoàng Vũ thực hiện đưa đón / trả khách linh hoạt theo lộ trình thực tế hoặc
+                                theo yêu cầu của khách hàng.</p>
+                            <p class="number">03</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://www.thuexehoangvu.com/image/cache/catalog/icon/cam-ket-an-toan-100x100.png"
+                                alt="">
+                            <p class="name">Cam Kết An Toàn</p>
+                            <p class="desc">An toàn cho người và tài sản, hành lý trên xe. An toàn cho hành trình đã cam
+                                kết.
+                            </p>
+                            <p class="number">04</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question">
+            <div class="container">
+                <div class="question_content">
+                    <div class="question_content-heading heading-cpn">
+                        <span>Câu Hỏi Thường Gặp</span>
+                        <div class="square">
+                            <div class="rectangle"></div>
+                        </div>
+                    </div>
+                    <div class="question_content-tabs tabs">
+                        <div class="tab">
+                            <input type="checkbox" id="chck1">
+                            <label class="tab-label" for="chck1">Công Thắng có cho thuê xe ô tô tự lái không?</label>
+                            <div class="tab-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eius impedit
+                                blanditiis saepe sed asperiores in praesentium, ullam veniam maxime laboriosam et earum,
+                                tenetur mollitia eum corporis reprehenderit commodi aliquid?
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="chck2">
+                            <label class="tab-label" for="chck2">Cách tính giá thuê xe tại Công Thắng?</label>
+                            <div class="tab-content">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequuntur
+                                reiciendis autem cum eos laudantium deserunt obcaecati porro dignissimos quo sunt
+                                consectetur animi delectus minus ipsam, error distinctio quos adipisci?
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="chck3">
+                            <label class="tab-label" for="chck3">Mức đặt cọc thuê xe là bao nhiêu?</label>
+                            <div class="tab-content">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In consectetur saepe,
+                                voluptatum esse velit quae eius, beatae corrupti laborum culpa tenetur impedit porro,
+                                dolores ut nobis quibusdam ducimus excepturi doloribus.
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="chck4">
+                            <label class="tab-label" for="chck4">Cách kiểm tra chất lượng xe?</label>
+                            <div class="tab-content">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In consectetur saepe,
+                                voluptatum esse velit quae eius, beatae corrupti laborum culpa tenetur impedit porro,
+                                dolores ut nobis quibusdam ducimus excepturi doloribus.
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="chck5">
+                            <label class="tab-label" for="chck5">Một số thương hiệu xe được ưa chuộng</label>
+                            <div class="tab-content">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In consectetur saepe,
+                                voluptatum esse velit quae eius, beatae corrupti laborum culpa tenetur impedit porro,
+                                dolores ut nobis quibusdam ducimus excepturi doloribus.
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="chck6">
+                            <label class="tab-label" for="chck6">Nhu cầu sử dụng xe đáp ứng</label>
+                            <div class="tab-content">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In consectetur saepe,
+                                voluptatum esse velit quae eius, beatae corrupti laborum culpa tenetur impedit porro,
+                                dolores ut nobis quibusdam ducimus excepturi doloribus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news_content">
+                    <div class="news_content-heading heading-cpn">
+                        <span>Cập Nhật Tin Tức</span>
+                        <div class="square">
+                            <div class="rectangle"></div>
+                        </div>
+                    </div>
+                    <div class="news_content-box"
+                        data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false,"pageDots": false,"freeScroll": true,"wrapAround": true,"groupCells": 1,"autoPlay": 2500}'>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://www.thuexehoangvu.com/image/cache/catalog/content/diem-du-lich-chau-doc/dia-diem-du-lich-chau-doc-cr-500x350.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text">Tin tức</p>
+                            <a href="#" class="title">Lorem ipsum dolor sit amet adipisicing adipisicing elit</a>
+                            <p class="desc">Lorem ipsum, dolor sit amet adipisicing elit. Aspernatur porro cum eveniet
+                                ratione distinctio illo, voluptatem iste amet dignissimos explicabo. Earum deserunt
+                                corporis iusto explicabo expedita dignissimos officiis eos obcaecati!
+                            </p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://www.thuexehoangvu.com/image/cache/catalog/content/mieu-ba-chua-xu/mieu-ba-chua-xu-nui-sam-cr-500x350.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text">Tin tức</p>
+                            <a href="#" class="title">Lorem ipsum dolor sit amet adipisicing elit</a>
+                            <p class="desc">Lorem ipsum, dolor sit amet adipisicing elit. Aspernatur porro cum eveniet
+                                ratione distinctio illo, voluptatem iste amet dignissimos explicabo. Earum deserunt
+                                corporis iusto explicabo expedita dignissimos officiis eos obcaecati!
+                            </p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://www.thuexehoangvu.com/image/cache/catalog/content/du-lich-chau-doc/du-lich-chau-doc-cr-500x350.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text">Tin tức</p>
+                            <a href="#" class="title">Lorem ipsum dolor sit amet adipisicing elit</a>
+                            <p class="desc">Lorem ipsum, dolor sit amet adipisicing elit. Aspernatur porro cum eveniet
+                                ratione distinctio illo, voluptatem iste amet dignissimos explicabo. Earum deserunt
+                                corporis iusto explicabo expedita dignissimos officiis eos obcaecati!
+                            </p>
+                        </div>
+
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://www.vietnamonline.com/media/uploads/froala_editor/images/VNO-Dalat%20Market.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text">Tin tức</p>
+                            <a href="#" class="title">Lorem ipsum dolor sit amet adipisicing elit</a>
+                            <p class="desc">Lorem ipsum, dolor sit amet adipisicing elit. Aspernatur porro cum eveniet
+                                ratione distinctio illo, voluptatem iste amet dignissimos explicabo. Earum deserunt
+                                corporis iusto explicabo expedita dignissimos officiis eos obcaecati!
+                            </p>
+                        </div>
+                        <div class="item">
+                            <div class="thumnail">
+                                <img src="https://www.hotelscombined.com/news/wp-content/uploads/sites/314/2020/09/featured-image-GettyImages-827359312.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text">Tin tức</p>
+                            <a href="#" class="title">Lorem ipsum dolor sit amet adipisicing elit</a>
+                            <p class="desc">Lorem ipsum, dolor sit amet adipisicing elit. Aspernatur porro cum eveniet
+                                ratione distinctio illo, voluptatem iste amet dignissimos explicabo. Earum deserunt
+                                corporis iusto explicabo expedita dignissimos officiis eos obcaecati!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_content-top">
+                    <div class="item">
+                        <p class="name --same">Nhà xe công thắng</p>
+                        <p class="transaction --same"><strong>VPGD:</strong> 142B Nguyễn Chí Thanh Phường 2 Thành Phố
+                            Bảo Lộc Lâm Đồng
+                        </p>
+                        <p class="number --same"><strong>Mã số doanh nghiệp: </strong>0000000000</p>
+                        <p class="hotline --same"><strong>Hotline:</strong> 0964775875</p>
+                        <a href="mailto:nhaxecongthang@gmail.com" class="mail --same"><strong>Email:
+                            </strong>Nhaxecongthang@gmail.com</a>
+                        <a href="https://www.facebook.com/profile.php?id=100094121616099&mibextid=ZbWKwL"
+                            class="fanpage --same"><strong>Fanpage:</strong>https://www.facebook.com/nhaxecongthang</a>
+                    </div>
+                    <div class="item">
+                        <div class="textbox">CHO THUÊ XE CÓ TÀI XẾ - KHÔNG CHO THUÊ XE TỰ LÁI</div>
+                        <a href="#" class="text">Về chúng tôi</a>
+                        <a href="#" class="text">Liên hệ</a>
+                        <a href="#" class="text">Điều khoản dịch vụ</a>
+                        <div class="social">
+                            <a href="./">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="./">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg>
+                            </a>
+                            <a href="./">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
+                            </a>
+                            <a href="./">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Dòng xe cho thuê</p>
+                        <a href="#" class="text">Thuê xe 4 chỗ</a>
+                        <a href="#" class="text">Thuê xe 7 chỗ</a>
+                        <a href="#" class="text">Thuê xe 16 chỗ</a>
+                        <a href="#" class="text">Thuê xe 29 chỗ</a>
+                        <a href="#" class="text">Thuê xe 45 chỗ</a>
+                    </div>
+                </div>
+                <div class="footer_content-bottom">
+                    <div class="left">
+                        <img src="./img/sports-car-races-through-dark-blurred-motion-generative-ai.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.065316767474!2d107.90311927491854!3d11.47521128871929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317407a75820ddc3%3A0xef7de6306e0a8938!2zVGjDtG4gMywgSMOyYSBOYW0sIERpIExpbmgsIEzDom0gxJDhu5NuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1690163537702!5m2!1svi!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coopyright">Copyright 2023 © Thiết kế bởi Sota</div>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+
+</body>
+
+</html>
