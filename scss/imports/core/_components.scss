@@ -64,6 +64,19 @@ a {
             }
         }
     }
+    @media (max-width: $sm-max) {
+        // Tablet
+        font-size: 30px;
+        .square {
+            &::before,
+            &::after {
+                width: 100px;
+            }
+        }
+    }
+    @media (max-width: $xs-max) {
+        // Mobile
+    }
 }
 
 section {

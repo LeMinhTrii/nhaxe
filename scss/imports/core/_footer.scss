@@ -104,6 +104,36 @@
             }
         }
     }
+    @media (max-width: $sm-max) {
+        // Tablet
+        padding-top: 30px;
+        &_content {
+            &-top {
+                display: grid;
+                grid-template-columns: 1fr;
+                .item {
+                    .textbox {
+                        border: none;
+                        text-align: left;
+                        padding: 0;
+                        &:hover {
+                            background: transparent;
+                            color: $red-cl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $xs-max) {
+        // Mobile
+        &_content {
+            &-bottom {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    }
     .coopyright {
         padding: 30px 0;
         font-size: 16px;
