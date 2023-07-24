@@ -13,6 +13,7 @@ $clouds: #ecf0f1;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
     margin-bottom: 20px;
     &-label {
+        line-height: 20px;
         display: flex;
         justify-content: space-between;
         padding: 15px;
